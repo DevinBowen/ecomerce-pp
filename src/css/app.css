@@ -1,0 +1,28 @@
+
+.App {
+
+}
+.header {
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.headLeft {
+    /* flex-direction: column; */
+}
+.headRight {
+    flex-direction: column;
+}
+.logo {
+
+}
+.headNav {
+
+}
+.directory {
+
+}
+.search {
+
+}
