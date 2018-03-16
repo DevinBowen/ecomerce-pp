@@ -1,28 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
 
+body {
+    letter-spacing: .02em;
+}
 .App {
 
 }
 .header {
-    background-color: aqua;
+    background-color: #fff;
+    height: 142px;
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 .headLeft {
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: row;
 }
 .headRight {
     flex-direction: column;
 }
 .logo {
-
+    background: url("https://www.thenorthface.com/etc/designs/vfcorp/thenorthface/clientlibs/global/images/common/logo-tnf.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
 }
 .headNav {
-
+    margin-top: 95px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Arimo', sans-serif;
+    /* letter-spacing: .12em; */
+    font-weight: 700;
+}
+a:visited {
+    color: #000000;
+}
+a:hover {
+    color: #e72b1e;
 }
 .directory {
-
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: .12em;
+    font-weight: 700;
+}
+.directoryNav {
+    margin-top: 20px;
 }
 .search {
+margin-top: 55px;
+margin-left: 70%;
+}
+.search input {
 
 }
