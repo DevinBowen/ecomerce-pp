@@ -11,7 +11,7 @@ class App extends Component {
           <div className="headLeft">
             <Link to="/"><div className="logo"></div></Link>
             <nav className="headNav">
-              <Link style={{ textDecoration: "none" }} to="/"><a>MEN'S</a></Link>
+              <Link style={{ textDecoration: "none", marginLeft: "15px" }} to="/"><a>MEN'S</a></Link>
               <Link style={{ textDecoration: "none", marginLeft: "30px" }} to="/about"><a>WOMEN'S</a></Link>
               <Link style={{ textDecoration: "none", marginLeft: "30px" }} to="/"><a>KIDS'</a></Link>
               <Link style={{ textDecoration: "none", marginLeft: "30px" }} to="/"><a>SHOES</a></Link>
