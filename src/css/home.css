@@ -1,0 +1,41 @@
+.home {
+    
+}
+.main_img {
+    background-image: url("../images/home_main.jpg");
+    background-size: cover;
+    background-position: center;
+    /* position: absolute; */
+    /* right: 0; */
+    /* top: 0; */
+    /* left: 0; */
+    height: 500px;
+    width: 100%;
+    /* height: 100%; */
+    /* background: blue; */
+}
+.three_boxes {
+    display: flex;
+    flex-direction: row;
+}
+.box1 {
+    background-image: url("../images/home_left.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 400px;
+}
+.box2 {
+    background-image: url("../images/home_middle.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 400px;
+}
+.box3 {
+    background-image: url("../images/home_right.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 400px;
+}

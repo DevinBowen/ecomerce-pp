@@ -36,6 +36,11 @@ class App extends Component {
         <div className="body">
           {routes}
         </div>
+
+        <footer>
+          <div className="site_map">map</div>
+          <div className="connect">connect</div>
+        </footer>
       </div>
     );
   }
