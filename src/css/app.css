@@ -37,6 +37,9 @@ body {
     /* letter-spacing: .12em; */
     font-weight: 700;
 }
+a {
+    color: #000;
+}
 a:visited {
     color: #000000;
 }
