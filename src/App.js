@@ -39,7 +39,10 @@ class App extends Component {
 
         <footer>
           <div className="site_map">map</div>
-          <div className="connect">connect</div>
+          <div className="connect">connect
+          <div className="top"></div>
+          <div className="bottom"></div>
+          </div>
         </footer>
       </div>
     );
