@@ -8,7 +8,7 @@ body {
 }
 .header {
     background-color: #fff;
-    height: 142px;
+    height: 114px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -25,17 +25,18 @@ body {
     background: url("https://www.thenorthface.com/etc/designs/vfcorp/thenorthface/clientlibs/global/images/common/logo-tnf.svg");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
+    height: 80px;
+    width: 80px;
+    margin: 15px;
 }
 .headNav {
     margin-top: 95px;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     font-family: 'Arimo', sans-serif;
     /* letter-spacing: .12em; */
     font-weight: 700;
+    margin-top: 70px;
 }
 a {
     color: #000;
@@ -47,7 +48,7 @@ a:hover {
     color: #e72b1e;
 }
 .directory {
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
     font-family: 'Arimo', sans-serif;
     letter-spacing: .12em;
@@ -57,11 +58,24 @@ a:hover {
     margin-top: 20px;
 }
 .search {
-    margin-top: 55px;
-    margin-left: 40%;
+    margin-top: 30px;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: row;
 }
 .search input {
-    height: 40px;
-    width: 250px;
-    border: solid 1px lightgrey;
+    height: 32.666667px;
+    width: 214px;
+    border-top: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+    border-left: solid 1px lightgrey;
+    border-right: none;
+    color: #000;
+}
+.enter_box {
+    width: 36px;
+    height: 36px;
+    border-top: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+    border-right: solid 1px lightgrey;
 }

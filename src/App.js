@@ -29,7 +29,10 @@ class App extends Component {
                 <Link style={{ textDecoration: "none", marginLeft: "15px" }} to="/"><a>CART</a></Link>
               </nav>
             </div>
-            <div className="search"><input type="text" placeholder="Search" /></div>
+            <div className="search">
+            <input type="text" placeholder="Search" />
+            <div className="enter_box">?</div>
+            </div>
           </div>
         </header>
 
