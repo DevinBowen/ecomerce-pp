@@ -41,10 +41,64 @@ class App extends Component {
         </div>
 
         <footer>
-          <div className="site_map">map</div>
-          <div className="connect">connect
-          <div className="top"></div>
-          <div className="bottom"></div>
+          <div className="site_map">
+            <div>SHOP
+              <div><ul>
+                  <li>Women's</li>
+                  <li>Men's</li>
+                  <li>Kids'</li>
+                  <li>Shoes</li>
+                  <li>Equipment</li>
+                  <li>Gift Cards</li>
+                </ul></div>
+            </div>
+            <div>HELP
+              <ul>
+                <li>FAQ?</li>
+                <li>VIPeak Rewards</li>
+                <li>Order Status</li>
+                <li>Sizing Charts</li>
+                <li>Warrenty Information</li>
+                <li>Return Policy</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div>ABOUT TNF
+              <div><ul>
+                  <li>About Us</li>
+                  <li>Responsibility</li>
+                  <li>Technology & Innovation</li>
+                  <li>Expeditions</li>
+                  <li>Explore Fund Grants</li>
+                  <li>News</li>
+                  <li>Careers</li>
+                </ul></div>
+            </div>
+            <div>EVENTS
+              <ul>
+                <li>Endurance Challenge</li>
+                <li>Speaker Series</li>
+              </ul>
+            </div>
+            <div>EXPLORE
+              <ul>
+                <li>The North Face App</li>
+                <li><img src="//images.thenorthface.com/is/image/TheNorthFaceBrand/app-store?fmt=png-alpha" /></li>
+              </ul>
+            </div>
+          </div>
+          <div className="connect">
+          <div className="main_top">
+            <div>STORE LOCATOR</div>
+            <div>FOLLOW THE NORTH FACE</div>
+            <div>ENTER YOUR EMAIL</div>
+          </div>
+          <div className="main_bottom">
+            <div className="logo"></div>
+            <div>Ⓒ The North Face, A VF Company</div>
+            <div>CA Supply Chains Act      UK Slavery Act</div>
+            <div>Privacy Policy      Terms of Use</div>
+          </div>
           </div>
         </footer>
       </div>
