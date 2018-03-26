@@ -11,9 +11,9 @@ export default class Home extends Component {
           1
         </div>
         <div className="three_boxes">
-          <div className="box1"></div>
-          <div className="box2"></div>
-          <div className="box3"></div>
+          <div className="box1">1</div>
+          <div className="box2">2</div>
+          <div className="box3">3</div>
         </div>
       </div>
     );
