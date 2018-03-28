@@ -8,7 +8,15 @@ export default class Home extends Component {
     return (
       <div className="home">
         <div className="main_img">
-          1
+          <div><img src={require("../images/Logo_Summit-Series-Horizontal-White.svg")} alt="summit logo" /></div>
+          <div>ATHLETE
+            <br/>
+              TESTED.
+              <br/>
+              EXPEDITION
+              <br/>
+              PROVEN.</div>
+              <div><button>EXPLORE THE COLLECTION</button></div>
         </div>
         <div className="three_boxes">
           <div className="box1">1</div>
