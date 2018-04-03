@@ -71,6 +71,39 @@ a:hover {
     width: 100%;
     z-index: 9999;
 }
+.drop_kids_invis {
+    position: absolute;
+    display: none;
+    }
+.drop_kids_vis {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 9999;
+}
+.drop_shoes_invis {
+    position: absolute;
+    display: none;
+    }
+.drop_shoes_vis {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 9999;
+}
+.drop_equipment_invis {
+    position: absolute;
+    display: none;
+    }
+.drop_equipment_vis {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 9999;
+}
 .off_top {
     position: absolute;
     top: -80px;
@@ -90,6 +123,7 @@ a:hover {
     background-color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
+    /* text-transform: uppercase; */
 }
 .features {
     font-weight: 700;

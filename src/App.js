@@ -3,6 +3,9 @@ import routes from './routes';
 import { Link } from 'react-router-dom';
 import './css/app.css';
 import WomensDrop from './components/drop/WomensDrop';
+import KidsDrop from './components/drop/KidsDrop';
+import ShoesDrop from './components/drop/ShoesDrop';
+import EquipmentDrop from './components/drop/EquipmentDrop';
 // import Test from './components/Test';
 
 class App extends Component {
@@ -12,27 +15,71 @@ class App extends Component {
     this.state = {
       dropMens: false,
       dropWomens: false,
+      dropKids: false,
+      dropShoes: false,
+      dropEquipment: false,
     }
     this.dropMens = this.dropMens.bind(this);
     this.turnOff = this.turnOff.bind(this);
     this.dropWomens = this.dropWomens.bind(this);
+    this.dropKids = this.dropKids.bind(this);
+    this.dropShoes = this.dropShoes.bind(this);
+    this.dropEquipment = this.dropEquipment.bind(this);
 
   }
 
   dropMens() {
     this.setState({
-      dropMens: !this.state.dropMens
+      dropMens: !this.state.dropMens,
+      dropWomens: false,
+      dropKids: false,
+      dropShoes: false,
+      dropEquipment: false
     })
   }
   dropWomens() {
     this.setState({
-      dropWomens: !this.state.dropWomens
+      dropWomens: !this.state.dropWomens,
+      dropMens: false,
+      dropKids: false,
+      dropShoes: false,
+      dropEquipment: false
+    })
+  }
+  dropKids() {
+    this.setState({
+      dropKids: !this.state.dropKids,
+      dropMens: false,
+      dropWomens: false,
+      dropShoes: false,
+      dropEquipment: false
+    })
+  }
+  dropShoes() {
+    this.setState({
+      dropShoes: !this.state.dropShoes,
+      dropMens: false,
+      dropWomens: false,
+      dropKids: false,
+      dropEquipment: false
+    })
+  }
+  dropEquipment() {
+    this.setState({
+      dropEquipment: !this.state.dropEquipment,
+      dropMens: false,
+      dropWomens: false,
+      dropShoes: false,
+      dropKids: false
     })
   }
   turnOff() {
     this.setState({
       dropMens: false,
-      dropWomens: false
+      dropWomens: false,
+      dropKids: false,
+      dropShoes: false,
+      dropEquipment: false
     })
   }
 
@@ -47,10 +94,10 @@ class App extends Component {
             <nav className="headNav">
               <Link onMouseOver={this.dropMens} style={{ textDecoration: "none", marginLeft: "15px" }} to="/mens"><a>MEN'S</a></Link>
               <Link onMouseOver={this.dropWomens} style={{ textDecoration: "none", marginLeft: "30px" }} to="/womens"><a>WOMEN'S</a></Link>
-              <Link style={{ textDecoration: "none", marginLeft: "30px" }} to="/kids"><a>KIDS'</a></Link>
-              <Link style={{ textDecoration: "none", marginLeft: "30px" }} to="/shoes"><a>SHOES</a></Link>
-              <Link style={{ textDecoration: "none", marginLeft: "30px" }} to="/equipment"><a>EQUIPMENT</a></Link>
-              <Link style={{ textDecoration: "none", marginLeft: "30px" }} to="/explore"><a>EXPLORE</a></Link>
+              <Link onMouseOver={this.dropKids} style={{ textDecoration: "none", marginLeft: "30px" }} to="/kids"><a>KIDS'</a></Link>
+              <Link onMouseOver={this.dropShoes} style={{ textDecoration: "none", marginLeft: "30px" }} to="/shoes"><a>SHOES</a></Link>
+              <Link onMouseOver={this.dropEquipment} style={{ textDecoration: "none", marginLeft: "30px" }} to="/equipment"><a>EQUIPMENT</a></Link>
+              <Link onMouseOver={this.turnOff} style={{ textDecoration: "none", marginLeft: "30px" }} to="/explore"><a>EXPLORE</a></Link>
             </nav>
           </div>
           <div className="headRight">
@@ -162,7 +209,39 @@ class App extends Component {
           <div className="off" onMouseOver={this.turnOff}></div>
           </div>
 
-          
+          <div
+          className={
+            this.state.dropKids ?
+              'drop_kids_vis' :
+              'drop_kids_invis'
+          }>
+          <div className="off_top" onMouseOver={this.turnOff}></div>
+          <KidsDrop />
+          <div className="off" onMouseOver={this.turnOff}></div>
+          </div>
+
+          <div
+          className={
+            this.state.dropShoes ?
+              'drop_shoes_vis' :
+              'drop_shoes_invis'
+          }>
+          <div className="off_top" onMouseOver={this.turnOff}></div>
+          <ShoesDrop />
+          <div className="off" onMouseOver={this.turnOff}></div>
+          </div>
+
+          <div
+          className={
+            this.state.dropEquipment ?
+              'drop_equipment_vis' :
+              'drop_equipment_invis'
+          }>
+          <div className="off_top" onMouseOver={this.turnOff}></div>
+          <EquipmentDrop />
+          <div className="off" onMouseOver={this.turnOff}></div>
+          </div>
+
         <div className="body">
           {routes}
         </div>

@@ -11,10 +11,10 @@ export default class WomensDrop extends Component {
           {/* <div className="off_top" onMouseOver={this.turnOff}></div> */}
           <div className="mens_links">
           <ul className="features">
-            <li>New Arrivals</li>
+            <li>MOVE MOUNTAINS</li>
             <li>Apex Flex GTX</li>
-            <li style={{ height: 52 }}>Protect Bears Ears</li>
-            <li style={{ height: 52 }}>Logo T-Shirts & Hoodies</li>
+            <li style={{ height: 52 }}>LOGO T-SHIRTS & HOODIES</li>
+            <li>PANT FIT FINDER</li>
             <li>Extended Sizes</li>
             <li>Sale</li>
           </ul>
