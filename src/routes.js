@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/home';
-import Mens from './components/mens';
-import Womens from './components/womens';
-import Kids from './components/kids';
-import Shoes from './components/shoes';
+import Mens from './components/mens/mens';
+import Womens from './components/womens/womens';
+import Kids from './components/kids/kids';
+import Shoes from './components/shoes/shoes';
 import Equipment from './components/equipment';
 import Explore from './components/explore';
 

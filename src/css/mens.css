@@ -1,0 +1,26 @@
+.mens_nav {
+    display: flex;
+    margin-left: 6%;
+}
+.mens_main {
+    background-image: url("../images/mens_main.png");
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    width: 100%;
+}
+.mens_three {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.mens_three img {
+    height: 240px;
+    width: 406px;
+    /* width: 530px;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%; */
+}
