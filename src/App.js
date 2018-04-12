@@ -88,6 +88,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      
       <Login className="login_hide" />
       
         <header className="header">
