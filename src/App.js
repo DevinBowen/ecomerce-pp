@@ -6,6 +6,7 @@ import WomensDrop from './components/drop/WomensDrop';
 import KidsDrop from './components/drop/KidsDrop';
 import ShoesDrop from './components/drop/ShoesDrop';
 import EquipmentDrop from './components/drop/EquipmentDrop';
+import Login from './components/Login';
 // import Test from './components/Test';
 
 class App extends Component {
@@ -87,6 +88,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Login className="login_hide" />
       
         <header className="header">
           <div className="headLeft">
