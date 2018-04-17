@@ -7,16 +7,21 @@ import Kids from './components/kids/kids';
 import Shoes from './components/shoes/shoes';
 import Equipment from './components/equipment';
 import Explore from './components/explore';
+import MensNew from './components/mens/MensNew';
 
 export default (
     <Switch>
-        
-         <Route exact path='/' component={Home} />
-         <Route path="/mens" component={Mens} />
-         <Route path="/womens" component={Womens} />
-         <Route path="/kids" component={Kids} />
-         <Route path="/shoes" component={Shoes} />
-         <Route path="/equipment" component={Equipment} />
-         <Route path="/explore" component={Explore} />
+        {/* main */}
+        <Route exact path='/' component={Home} />
+        <Route exact path="/mens" component={Mens} />
+        <Route exact path="/womens" component={Womens} />
+        <Route exact path="/kids" component={Kids} />
+        <Route exact path="/shoes" component={Shoes} />
+        <Route exact path="/equipment" component={Equipment} />
+        <Route path="/explore" component={Explore} />
+
+        {/* mens */}
+        <Route path="/mens/mensnew" component={MensNew} />
+
     </Switch>
 )

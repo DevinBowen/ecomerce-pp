@@ -6,7 +6,7 @@ import WomensDrop from './components/drop/WomensDrop';
 import KidsDrop from './components/drop/KidsDrop';
 import ShoesDrop from './components/drop/ShoesDrop';
 import EquipmentDrop from './components/drop/EquipmentDrop';
-import Login from './components/Login';
+// import Login from './components/Login';
 // import Test from './components/Test';
 
 class App extends Component {
@@ -89,17 +89,17 @@ class App extends Component {
     return (
       <div className="App">
       
-      <Login className="login_hide" />
+      {/* <Login className="login_hide" /> */}
       
         <header className="header">
           <div className="headLeft">
             <Link to="/"><div className="logo"></div></Link>
             <nav className="headNav">
-              <Link onMouseOver={this.dropMens} style={{ textDecoration: "none", marginLeft: "15px" }} to="/mens"><a>MEN'S</a></Link>
-              <Link onMouseOver={this.dropWomens} style={{ textDecoration: "none", marginLeft: "30px" }} to="/womens"><a>WOMEN'S</a></Link>
-              <Link onMouseOver={this.dropKids} style={{ textDecoration: "none", marginLeft: "30px" }} to="/kids"><a>KIDS'</a></Link>
-              <Link onMouseOver={this.dropShoes} style={{ textDecoration: "none", marginLeft: "30px" }} to="/shoes"><a>SHOES</a></Link>
-              <Link onMouseOver={this.dropEquipment} style={{ textDecoration: "none", marginLeft: "30px" }} to="/equipment"><a>EQUIPMENT</a></Link>
+              <Link onClick={this.turnOff} onMouseOver={this.dropMens} style={{ textDecoration: "none", marginLeft: "15px" }} to="/mens"><a>MEN'S</a></Link>
+              <Link onClick={this.turnOff} onMouseOver={this.dropWomens} style={{ textDecoration: "none", marginLeft: "30px" }} to="/womens"><a>WOMEN'S</a></Link>
+              <Link onClick={this.turnOff} onMouseOver={this.dropKids} style={{ textDecoration: "none", marginLeft: "30px" }} to="/kids"><a>KIDS'</a></Link>
+              <Link onClick={this.turnOff} onMouseOver={this.dropShoes} style={{ textDecoration: "none", marginLeft: "30px" }} to="/shoes"><a>SHOES</a></Link>
+              <Link onClick={this.turnOff} onMouseOver={this.dropEquipment} style={{ textDecoration: "none", marginLeft: "30px" }} to="/equipment"><a>EQUIPMENT</a></Link>
               <Link onMouseOver={this.turnOff} style={{ textDecoration: "none", marginLeft: "30px" }} to="/explore"><a>EXPLORE</a></Link>
             </nav>
           </div>
@@ -131,7 +131,7 @@ class App extends Component {
           <div className="off_top" onMouseOver={this.turnOff}></div>
           <div className="mens_links">
           <ul className="features">
-            <li>New Arrivals</li>
+            <li><Link onClick={this.turnOff} style={{ textDecoration: "none" }} to="/mens/mensnew">New Arrivals</Link></li>
             <li>Apex Flex GTX</li>
             <li style={{ height: 52 }}>Protect Bears Ears</li>
             <li style={{ height: 52 }}>Logo T-Shirts & Hoodies</li>

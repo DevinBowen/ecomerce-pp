@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import '../../css/home.css';
 
 
 
@@ -8,6 +9,7 @@ export default class Mens_Home extends Component {
     render() {
         return (
             <div className="mens_home">
+            <div className="shipping">FREE 3-DAY SHIPPING & FREE RETURNS</div>
                 <div className="mens_nav">
                     <div>MEN'S</div>
                     <Link style={{ textDecoration: "none" }} to="/"><a>JACKET & VESTS</a></Link>
