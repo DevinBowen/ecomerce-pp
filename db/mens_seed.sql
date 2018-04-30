@@ -2,9 +2,9 @@ create table mens_jackets (
     id serial primary key,
     name text,
     price decimal,
-    release_day number,
-    release_month number,
-    release_year number,
+    release_day text,
+    release_month text,
+    release_year text,
     image1 text,
     -- purpose
     rainware boolean default false,
@@ -14,18 +14,18 @@ create table mens_jackets (
     vests boolean default false,
     casual boolean default false,
     skiingsnowboarding boolean default false,
-    3in1 boolean default false,
+    "3in1" boolean default false,
     running boolean default false,
     windware boolean default false,
     -- style
     hooded boolean default false,
-    non-hooded boolean default false,
+    nonhooded boolean default false,
     vest boolean default false,
     longsleve boolean default false,
     triclimate boolean default false,
     hybrid boolean default false,
     parka boolean default false,
-    1piece boolean default false,
+    "1piece" boolean default false,
     blanket boolean default false,
     bomber boolean default false,
     buttondown boolean default false,
@@ -60,7 +60,7 @@ create table mens_jackets (
     l boolean default false,
     xl boolean default false,
     xxl boolean default false,
-    3xl boolean default false,
+    "3xl" boolean default false,
     -- activity
     hiking boolean default false,
     city boolean default false,
@@ -72,7 +72,11 @@ create table mens_jackets (
     camping boolean default false
 )
 
-
+insert into mens_jackets (
+    name
+) values (
+    'test'
+)
 
 
 
